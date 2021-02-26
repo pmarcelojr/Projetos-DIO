@@ -6,7 +6,7 @@ namespace Projeto_Series.View
     {
         public static string Menu()
         {
-            Console.WriteLine("DIO Seéries a seu dispor !!!");
+            Console.WriteLine("DIO Séries a seu dispor !!!");
             Console.WriteLine();
             Console.WriteLine("Informe a opção desejada:");
 
