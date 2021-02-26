@@ -1,0 +1,17 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+            string n = Console.ReadLine();
+            //continue a solução
+            char[] arquivo = n.ToCharArray();
+            Array.Reverse(arquivo);
+            
+            string v = new string(arquivo);
+            Console.WriteLine(v);
+
+    }
+
+}
