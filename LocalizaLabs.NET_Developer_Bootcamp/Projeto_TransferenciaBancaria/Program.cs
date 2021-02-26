@@ -9,30 +9,30 @@ namespace Projeto_TransferenciaBancaria
 {
     class Program
     {
-        //static List<Conta> listConta = new List<Conta>();
         static void Main(string[] args)
         {
             ContaController conta = new ContaController();
 
             string opcao = Menu.ObterOpcaoUsuario();
+
             while (opcao.ToUpper() != "X")
             {
                 switch (opcao.ToUpper())
                 {
                     case "1":
-                        //ListarContas();
+                        conta.ListarContas();
                         break;
                     case "2":
                         conta.InserirConta();
                         break;
                     case "3":
-                        //Transferir();
+                        conta.Transferir();
                         break;
                     case "4":
-                        //Sacar();
+                        conta.Sacar();
                         break;
                     case "5":
-                        //Depositar();
+                        conta.Depositar();
                         break;
                     case "C":
                         Console.Clear();
