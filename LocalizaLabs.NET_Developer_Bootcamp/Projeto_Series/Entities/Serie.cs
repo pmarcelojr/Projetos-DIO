@@ -26,7 +26,8 @@ namespace Projeto_Series.Entities
             return "Gênero: " + Genero + Environment.NewLine +
                     "Titulo: " + Titulo + Environment.NewLine +
                     "Descrição: " + Descricao + Environment.NewLine +
-                    "Ano de Inicio: " + Ano;
+                    "Ano de Inicio: " + Ano + Environment.NewLine +
+                    "Excluído: " + Excluido;
         }
 
         public string RetornaTitulo()
@@ -37,6 +38,11 @@ namespace Projeto_Series.Entities
         public int RetornaId()
         {
             return Id;
+        }
+
+        public bool RetornaExcluido()
+        {
+            return Excluido;
         }
 
         public void Excluir()
